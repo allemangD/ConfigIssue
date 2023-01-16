@@ -1,11 +1,15 @@
 #include <iostream>
+#include <string>
 #include <stdlib.h>
 
+std::string get_environ(std::string const &name) {
+    char const *val = getenv(name.c_str());
+    if (!val) return "";
+    return val;
+}
+
 int main() {
-  char buf[256];
-  size_t len;
-  getenv_s(&len, buf, "SAMPLE");
-  std::string sample(buf);
-  std::cout << "SAMPLE: '" << sample << "'" << std::endl;
-  return 0;
+    std::string sample = get_environ("SAMPLE");
+    std::cout << "SAMPLE: '" << sample << "'" << std::endl;
+    return 0;
 }

@@ -25,6 +25,7 @@ SET SAMPLE=VALUE
 
 ## Tested Platforms:
 
-| OS         | CLion    | CMake            | Toolchain          |
-|------------|----------|------------------|--------------------|
-| Windows 11 | 2022.1.3 | 3.24.2 (bundled) | Visual Studio 2019 |
+| OS           | CLion    | CMake            | Toolchain          |
+|--------------|----------|------------------|--------------------|
+| Windows 11   | 2022.3.1 | 3.24.2 (bundled) | Visual Studio 2019 |
+| Ubuntu 22.04 | 2022.3.1 | 3.24.2 (bundled) | GCC 11.3           |
